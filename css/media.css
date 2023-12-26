@@ -1,0 +1,2285 @@
+.hamburger-menu {
+    display: none;
+}
+
+@media screen and (min-width: 200px) and (max-width: 260px) {
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        left: 0 !important;
+        padding-left: 10px;
+    }
+
+    .menu__btn {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        width: 15px;
+        height: 1px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #scrollToTopButton {
+        width: 27px;
+        height: 27px;
+        font-size: 15px;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #125570;
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: white;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #125570;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+        font-size: 14px;
+    }
+
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+
+    .loading-image {
+        width: 70px;
+    }
+
+    .loading-title {
+        font-size: 12px;
+    }
+
+    .loading-slogan {
+        font-size: 10px;
+    }
+
+    .real_school {
+        font-size: 10px;
+        color: #125570;
+    }
+
+    .header_video {
+        width: 150px;
+    }
+
+    .under_header {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+    }
+
+    .start_header_btn {
+        width: 55px;
+        height: 12px;
+        font-size: 8px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
+    .about_us_title {
+        font-size: 12px;
+    }
+
+    .about_us_text {
+        font-size: 6px;
+    }
+
+    .about_us {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .courses_title {
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .for_diplayflex {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .frontend_course {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 400px;
+    }
+
+    .online_course_btn {
+        font-size: 10px;
+        margin-top: 20px;
+        width: 92px;
+    }
+
+    .front {
+        font-size: 14px;
+    }
+
+    .btn_b {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .term_of_course {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .more_btn {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .slide_title {
+        font-size: 12px;
+    }
+
+    .slide_p {
+        font-size: 12px;
+    }
+
+    .img_certificate {
+        width: 400px;
+    }
+
+    .prev {
+        left: 20px;
+        font-size: 12px;
+    }
+
+    .next {
+        right: 20px;
+        font-size: 12px;
+    }
+
+    .team_title {
+        font-size: 12px;
+    }
+
+    .team_photos {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .team_photo {
+        width: 50px;
+        height: 60px;
+        border-radius: 20px;
+    }
+
+    .talat {
+        width: 45px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .donik_founder {
+        width: 45px;
+        border-bottom-right-radius: 28px;
+        border-bottom-left-radius: 26px;
+    }
+
+    .donik_box {
+        display: flex;
+        align-items: end;
+    }
+
+    .amigo {
+        width: 45px;
+        border-bottom-right-radius: 19px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .amigo_box {
+        display: flex;
+        align-items: end;
+    }
+
+    .h044 {
+        font-size: 12px;
+    }
+
+    .a {
+        background-color: white;
+        width: 200px;
+        height: 250px;
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .bb {
+        border-radius: 25px;
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .c {
+        border-radius: 25px;
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .d {
+        border-radius: 25px;
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .e {
+        border-radius: 25px;
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ff {
+        border-radius: 25px;
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .img_certificate {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .about_us_text {
+        font-size: 9.5px;
+    }
+
+    .zap {
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .zap2 {
+        height: 30px;
+        width: 30px;
+        top: 200px;
+    }
+
+    .al {
+        font-size: 12px;
+    }
+
+    .p_ot {
+        font-size: 10px;
+    }
+
+    .fs {
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .f_h2 {
+        font-size: 12px;
+    }
+
+    .no_hover {
+        font-size: 10px;
+    }
+
+    .no_hover_ {
+        font-size: 10px;
+    }
+
+    .f2 img {
+        display: none;
+    }
+
+    .f3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacts {
+        margin-top: 50px;
+    }
+
+    .f2 {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .all_rights {
+        font-size: 8px;
+    }
+
+    .frontend_course {
+        height: 490px;
+    }
+
+    .header_video {
+        width: 90px;
+    }
+}
+
+@media screen and (min-width: 218px) and (max-width: 260px) {
+    .talat {
+        border-bottom-right-radius: 16px;
+    }
+
+    .amigo {
+        border-bottom-right-radius: 14px;
+    }
+
+    .donik_founder {
+        border-bottom-left-radius: 18px;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 320px) {
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        left: 0 !important;
+        padding-left: 10px;
+    }
+
+    .menu__btn {
+        position: absolute;
+        top: 30px;
+        left: 32px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    #scrollToTopButton {
+        width: 27px;
+        height: 27px;
+        font-size: 15px;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #125570;
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: white;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #125570;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+        font-size: 14px;
+    }
+
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+
+    .loading-image {
+        width: 70px;
+    }
+
+    .loading-title {
+        font-size: 12px;
+    }
+
+    .loading-slogan {
+        font-size: 10px;
+    }
+
+    .real_school {
+        font-size: 12px;
+        color: #125570;
+    }
+
+    .header_video {
+        width: 150px;
+    }
+
+    .under_header {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+    }
+
+    .start_header_btn {
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .about_us_title {
+        font-size: 12px;
+    }
+
+    .about_us_text {
+        font-size: 10px;
+    }
+
+    .about_us {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .courses_title {
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .for_diplayflex {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .frontend_course {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 400px;
+    }
+
+    .online_course_btn {
+        font-size: 10px;
+        margin-top: 20px;
+        width: 92px;
+    }
+
+    .front {
+        font-size: 14px;
+    }
+
+    .btn_b {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .term_of_course {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .more_btn {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .slide_title {
+        font-size: 12px;
+    }
+
+    .slide_p {
+        font-size: 12px;
+    }
+
+    .img_certificate {
+        width: 400px;
+    }
+
+    .prev {
+        left: 30px;
+        font-size: 12px;
+    }
+
+    .next {
+        right: 30px;
+        font-size: 12px;
+    }
+
+    .team_title {
+        font-size: 12px;
+    }
+
+    .team_photos {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .team_photo {
+        width: 100%;
+        height: 100px;
+    }
+
+    .talat {
+        width: 80px;
+        border-radius: 30px;
+    }
+
+    .donik_founder {
+        width: 80px;
+    }
+
+    .amigo {
+        width: 80px;
+        border-radius: 35px;
+    }
+
+    .h044 {
+        font-size: 12px;
+    }
+
+    .a {
+        background-color: white;
+        width: 250px;
+        height: 250px;
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .bb {
+        border-radius: 25px;
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .c {
+        border-radius: 25px;
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .d {
+        border-radius: 25px;
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .e {
+        border-radius: 25px;
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ff {
+        border-radius: 25px;
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .img_certificate {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider {
+        height: 500px;
+    }
+
+    .about_us_text {
+        font-size: 9.5px;
+    }
+
+    .header_video {
+        width: 120px;
+    }
+
+    .zap {
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .zap2 {
+        height: 30px;
+        width: 30px;
+        top: 200px;
+    }
+
+    .al {
+        font-size: 12px;
+    }
+
+    .p_ot {
+        font-size: 10px;
+    }
+
+    .fs {
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .f_h2 {
+        font-size: 12px;
+    }
+
+    .no_hover {
+        font-size: 10px;
+    }
+
+    .no_hover_ {
+        font-size: 10px;
+    }
+
+    .f2 img {
+        display: none;
+    }
+
+    .f3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacts {
+        margin-top: 50px;
+    }
+
+    .f2 {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .all_rights {
+        font-size: 8px;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 365px) {
+    .fs {
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .f3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        left: 0 !important;
+        padding-left: 10px;
+    }
+
+    .menu__btn {
+        position: absolute;
+        top: 30px;
+        left: 32px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #125570;
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: white;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #125570;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+        font-size: 14px;
+    }
+
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+
+    .loading-image {
+        width: 90px;
+    }
+
+    .loading-title {
+        font-size: 14px;
+    }
+
+    .loading-slogan {
+        font-size: 12px;
+    }
+
+    .real_school {
+        font-size: 14px;
+        color: #125570;
+    }
+
+    .header_video {
+        width: 175px;
+    }
+
+    .under_header {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        gap: 10px;
+    }
+
+    .start_header_btn {
+        width: 70px;
+        height: 20px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .about_us_title {
+        font-size: 14px;
+    }
+
+    .about_us_text {
+        font-size: 11px;
+    }
+
+    .about_us {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .courses_title {
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+    .for_diplayflex {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .frontend_course {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 410px;
+    }
+
+    .online_course_btn {
+        font-size: 10px;
+        margin-top: 20px;
+        width: 92px;
+    }
+
+    .front {
+        font-size: 18px;
+    }
+
+    .btn_b {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .term_of_course {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .more_btn {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .slide_title {
+        font-size: 14px;
+    }
+
+    .slide_p {
+        font-size: 14px;
+    }
+
+    .img_certificate {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .prev {
+        left: 30px;
+        font-size: 12px;
+    }
+
+    .next {
+        right: 30px;
+        font-size: 12px;
+    }
+
+    .team_title {
+        font-size: 14px;
+    }
+
+    .team_photos {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .team_photo {
+        width: 100%;
+        height: 150px;
+    }
+
+    .talat {
+        width: 100px;
+    }
+
+    .donik_founder {
+        width: 100px;
+    }
+
+    .amigo {
+        width: 100px;
+        border-radius: 30px;
+    }
+
+    .amigo_box {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .h044 {
+        font-size: 14px;
+    }
+
+    .a {
+        background-color: white;
+        width: 300px;
+        height: 250px;
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .bb {
+        border-radius: 25px;
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .c {
+        border-radius: 25px;
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .d {
+        border-radius: 25px;
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .e {
+        border-radius: 25px;
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ff {
+        border-radius: 25px;
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #scrollToTopButton {
+        width: 27px;
+        height: 27px;
+        font-size: 15px;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .zap {
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .zap2 {
+        height: 30px;
+        width: 30px;
+        top: 200px;
+    }
+
+    .al {
+        font-size: 14px;
+    }
+
+    .p_ot {
+        font-size: 12px;
+    }
+
+    #contacts {
+        margin-top: 40px;
+    }
+
+    .fs {
+        gap: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .f_h2 {
+        font-size: 12px;
+    }
+
+    .no_hover {
+        font-size: 10px;
+    }
+
+    .no_hover_ {
+        font-size: 10px;
+    }
+
+    .f2 img {
+        display: none;
+    }
+
+    .ft {
+        text-align: left;
+    }
+
+    .f2 {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .all_rights {
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 432px) and (max-width: 600px) {
+    .talat {
+        border-bottom-right-radius: 30px;
+        width: 110px;
+    }
+
+    .donik_founder {
+        width: 110px;
+    }
+
+    .amigo {
+        width: 110px;
+    }
+}
+
+@media screen and (min-width: 392px) and (max-width: 600px) {
+    #scrollToTopButton {
+        width: 27px;
+        height: 27px;
+        font-size: 15px;
+        bottom: 5px;
+        right: 5px;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 600px) {
+    .team_photo {
+        width: 117px;
+    }
+
+    .talat {
+        width: 115px;
+    }
+
+    .donik_founder {
+        width: 115px;
+    }
+
+    .amigo {
+        width: 118px;
+    }
+
+    .fs {
+        gap: 100px;
+    }
+
+    .slider {
+        height: 500px;
+    }
+}
+
+
+@media screen and (min-width: 545px) and (max-width: 600px) {
+    .team_photos {
+        gap: 20px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    .loading-image {
+        width: 90px;
+    }
+
+    .loading-title {
+        font-size: 14px;
+    }
+
+    .loading-slogan {
+        font-size: 12px;
+    }
+
+    .real_school {
+        font-size: 14px;
+        color: #125570;
+    }
+
+    .header_video {
+        width: 300px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    header {
+        gap: 17px;
+        padding-left: 30px;
+    }
+
+    .fs {
+        gap: 150px;
+    }
+
+    .src {
+        font-size: 10px;
+    }
+
+    .home {
+        font-size: 10px;
+    }
+
+    .under_header {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        gap: 10px;
+    }
+
+    .start_header_btn {
+        width: 70px;
+        height: 20px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .about_us_title {
+        font-size: 14px;
+    }
+
+    .about_us_text {
+        font-size: 11px;
+    }
+
+    .about_us {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .courses_title {
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+    .for_diplayflex {
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .frontend_course {
+        width: 45%;
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 430px;
+    }
+
+    .online_course_btn {
+        font-size: 10px;
+        margin-top: 20px;
+        width: 92px;
+    }
+
+    .front {
+        font-size: 18px;
+    }
+
+    .btn_b {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .term_of_course {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .more_btn {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .slide_title {
+        font-size: 14px;
+    }
+
+    .slide_p {
+        font-size: 14px;
+    }
+
+    .img_certificate {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .prev {
+        left: 70px;
+        font-size: 12px;
+    }
+
+    .next {
+        right: 70px;
+        font-size: 12px;
+    }
+
+    .team_title {
+        font-size: 14px;
+    }
+
+    .team_photos {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .team_photo {
+        width: 100%;
+        height: 150px;
+    }
+
+    .talat {
+        width: 100px;
+    }
+
+    .donik_founder {
+        width: 100px;
+    }
+
+    .amigo {
+        width: 100px;
+        border-radius: 30px;
+    }
+
+    .amigo_box {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .h044 {
+        font-size: 14px;
+    }
+
+    .a {
+        background-color: white;
+        width: 400px;
+        height: 250px;
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .bb {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .c {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .d {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .e {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ff {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #scrollToTopButton {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        bottom: 10px;
+        right: 5px;
+    }
+
+    .zap {
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .zap2 {
+        height: 30px;
+        width: 30px;
+        top: 200px;
+    }
+
+    .al {
+        font-size: 14px;
+    }
+
+    .p_ot {
+        font-size: 12px;
+    }
+
+    #contacts {
+        margin-top: 40px;
+    }
+
+    .fs {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .f_h2 {
+        font-size: 12px;
+    }
+
+    .no_hover {
+        font-size: 10px;
+    }
+
+    .no_hover_ {
+        font-size: 10px;
+    }
+
+    .f2 img {
+        display: none;
+    }
+
+    .ft {
+        text-align: left;
+    }
+
+    .f2 {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .all_rights {
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .talat {
+        border-bottom-right-radius: 30px;
+        width: 110px;
+    }
+
+    .donik_founder {
+        width: 110px;
+    }
+
+    .amigo {
+        width: 110px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    #scrollToTopButton {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        bottom: 10px;
+        right: 5px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .team_photo {
+        width: 117px;
+    }
+
+    .talat {
+        width: 115px;
+    }
+
+    .donik_founder {
+        width: 115px;
+    }
+
+    .amigo {
+        width: 118px;
+    }
+
+    .slider {
+        height: 600px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .team_photos {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 900px) {
+    .logo {
+        width: 60px;
+    }
+
+    .src {
+        font-size: 14px;
+    }
+
+    .home {
+        font-size: 14px;
+    }
+
+    header {
+        gap: 20px;
+    }
+
+    .real_school {
+        font-size: 20px;
+    }
+
+    .start_header_btn {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .about_us_title {
+        font-size: 16px;
+    }
+
+    .about_us_text {
+        font-size: 12px;
+    }
+
+    .courses_title {
+        font-size: 16px;
+    }
+
+    .frontend_course {
+        height: 380px;
+    }
+
+    .slide_title {
+        font-size: 16px;
+    }
+
+    .slide_p {
+        font-size: 14px;
+    }
+
+    .team_title {
+        font-size: 16px;
+    }
+
+    .h044 {
+        font-size: 16px;
+    }
+
+    .team_photo {
+        width: 150px;
+        height: 200px;
+    }
+
+    .talat {
+        width: 150px;
+        border: 30px;
+    }
+
+    .slider {
+        height: 650px;
+    }
+
+    .team_photos {
+        gap: 30px;
+    }
+
+    #scrollToTopButton {
+        width: 30px;
+        bottom: 10px;
+        right: 5px;
+        height: 30px;
+    }
+
+    .donik_founder {
+        width: 150px;
+        border: 30px;
+    }
+
+    .amigo {
+        width: 150px;
+        border: 30px;
+    }
+
+    .f_h2 {
+        font-size: 14px;
+    }
+
+    .no_hover_ {
+        font-size: 12px;
+    }
+
+    .no_hover {
+        font-size: 12px;
+    }
+
+    .zap2 {
+        right: 12px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) and (max-width: 1234px) {
+
+    .loading-image {
+        width: 90px;
+    }
+
+    .loading-title {
+        font-size: 14px;
+    }
+
+    .loading-slogan {
+        font-size: 12px;
+    }
+
+    .header_video {
+        width: 500px;
+    }
+
+    header {
+        gap: 17px;
+        padding-left: 30px;
+    }
+
+    .fs {
+        gap: 150px;
+    }
+
+    .src {
+        font-size: 10px;
+    }
+
+    .home {
+        font-size: 10px;
+    }
+
+    .under_header {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        gap: 10px;
+    }
+
+    .start_header_btn {
+        width: 70px;
+        height: 20px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .about_us_title {
+        font-size: 14px;
+    }
+
+    .about_us_text {
+        font-size: 11px;
+    }
+
+    .about_us {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .courses_title {
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+    .for_diplayflex {
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .frontend_course {
+        width: 45%;
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 430px;
+    }
+
+    .online_course_btn {
+        font-size: 10px;
+        margin-top: 20px;
+        width: 92px;
+    }
+
+    .front {
+        font-size: 18px;
+    }
+
+    .btn_b {
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .term_of_course {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .more_btn {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .slide_title {
+        font-size: 14px;
+    }
+
+    .slide_p {
+        font-size: 14px;
+    }
+
+    .img_certificate {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .prev {
+        left: 150px;
+        font-size: 14px;
+    }
+
+    .next {
+        right: 150px;
+        font-size: 14px;
+    }
+
+    .team_title {
+        font-size: 14px;
+    }
+
+    .team_photos {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .team_photo {
+        width: 100%;
+        height: 150px;
+    }
+
+    .talat {
+        width: 100px;
+    }
+
+    .donik_founder {
+        width: 100px;
+    }
+
+    .amigo {
+        width: 100px;
+        border-radius: 30px;
+    }
+
+    .amigo_box {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .h044 {
+        font-size: 18px;
+    }
+
+    .a {
+        background-color: white;
+        width: 400px;
+        height: 250px;
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .bb {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .c {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .d {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .e {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ff {
+        border-radius: 25px;
+        width: 400px;
+        height: 250px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #scrollToTopButton {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .zap {
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .zap2 {
+        height: 30px;
+        width: 30px;
+        top: 200px;
+    }
+
+    .al {
+        font-size: 14px;
+    }
+
+    .p_ot {
+        font-size: 12px;
+    }
+
+    #contacts {
+        margin-top: 40px;
+    }
+
+    .fs {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .f_h2 {
+        font-size: 12px;
+    }
+
+    .no_hover {
+        font-size: 10px;
+    }
+
+    .no_hover_ {
+        font-size: 10px;
+    }
+
+    .f2 img {
+        display: none;
+    }
+
+    .ft {
+        text-align: left;
+    }
+
+    .f2 {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .all_rights {
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) and (max-width: 1234px) {
+    .talat {
+        border-bottom-right-radius: 30px;
+        width: 110px;
+    }
+
+    .donik_founder {
+        width: 110px;
+    }
+
+    .amigo {
+        width: 110px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1234px) {
+    #scrollToTopButton {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1234px) {
+    .team_photo {
+        width: 117px;
+    }
+
+    .talat {
+        width: 115px;
+    }
+
+    .donik_founder {
+        width: 115px;
+    }
+
+    .amigo {
+        width: 118px;
+    }
+
+    .slider {
+        height: 600px;
+    }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1234px) {
+    .team_photos {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1234px) {
+    .logo {
+        width: 80px;
+    }
+
+    .src {
+        font-size: 20px;
+    }
+
+    .home {
+        font-size: 20px;
+    }
+
+    header {
+        gap: 30px;
+    }
+
+    .real_school {
+        font-size: 27px;
+    }
+
+    .start_header_btn {
+        width: 95px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .about_us_title {
+        font-size: 20px;
+    }
+
+    .about_us_text {
+        font-size: 16px;
+    }
+
+    .courses_title {
+        font-size: 20px;
+    }
+
+    .frontend_course {
+        height: 380px;
+    }
+
+    .slide_title {
+        font-size: 20px;
+    }
+
+    .slide_p {
+        font-size: 16px;
+    }
+
+    .team_title {
+        font-size: 20px;
+    }
+
+    .team_photo {
+        width: 150px;
+        height: 200px;
+    }
+
+    .talat {
+        width: 150px;
+        border: 30px;
+    }
+
+    .h044 {
+        font-size: 20px;
+    }
+
+    .slider {
+        height: 850px;
+    }
+
+    .team_photos {
+        gap: 30px;
+    }
+
+    .al {
+        font-size: 20px;
+    }
+
+    .p_ot {
+        font-size: 14px;
+    }
+
+    #scrollToTopButton {
+        width: 35px;
+        height: 35px;
+    }
+
+    .donik_founder {
+        width: 150px;
+        border: 30px;
+    }
+
+    .amigo {
+        width: 150px;
+        border: 30px;
+    }
+
+    .f_h2 {
+        font-size: 16px;
+    }
+
+    .no_hover_ {
+        font-size: 14px;
+    }
+
+    .no_hover {
+        font-size: 14px;
+    }
+
+    .zap2 {
+        right: 12px;
+    }
+
+    .all_rights {
+        font-size: 12px;
+    }
+}
